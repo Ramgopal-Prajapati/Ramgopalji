@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reviews Page</title>
+        <meta name="Faculty Review website " content="This is a faculty and teacher review website Created by Ramgopal prajapati ">
+        <meta name="Ramgopal prajapati " content=" ">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/static/assets/css/st.css" rel="stylesheet">
+
+    </head>
+   
+    <body>
+      <header class="headerr"> 
+      <img src="/static/assets/img/AI3.jpeg"  class="imgss" alt="">
+        <div class="textt">
+        <div class="nav-bar">
+       <h1>Wel Come to Ramgopal Website</h1>
+       </header>
+   
+
+        <div class="box">
+        <h1>Here Review</h1>
+        <h2> In this review not nessaccry to mantion your name . You can also mantions name as a 
+             "Ramgopal Friends " and please make sure your review is proper . Not use a abouse word in the review .<br> This Review is My Wealth .
+
+        <form class="form" method="POST" action=" " enctype="multipart/form-data">
+        {% csrf_token %}
+      <input class="de"  type="text"  name="u_name" placeholder="Enter your name"  /> <br><br>
+      <input class="de" type="number"  name="u_number" placeholder="Enter your Number"  /> <br><br>
+      <Select  type="dropdown" class="drop" name="u_profession"  > 
+        <option  name="u_profession">Select Profession</option>
+        <option name="u_profession">Students</option>
+        <option name="u_profession">Working-Profetional</option>
+        <option name="u_profession">Friends</option>
+        <option name="u_profession">Teacher</option>
+        <option name="u_profession">Family-member</option>
+        <option name="u_profession">Other </option>
+        </select>
+        <br><br>
+        <input class="de" type="file" class="drop" name="u_imgs" /><br><br>
+        <Select  type="dropdown" class="drop" name="u_rating"> 
+        <option name="u_rating">Select Rating</option>
+        <option name="u_rating">1 - Poor</option>
+        <option name="u_rating">2 - Normal</option>
+        <option name="u_rating">3 - Good </option>
+        <option name="u_rating">4 - Very Good </option>
+        <option name="u_rating">5 - Best</option>
+        </select>
+        <br><br>
+        <input class="suggetion" type="textarea" name="u_feedback"   placeholder="Your Feedback" 
+        required/><br><br>
+        <input   class="suggetion" type="textarea" name="u_suggesion"  
+        placeholder=" Give Suggetion" required/><br><br>
+        <a href="Home/"> <button  class="bttn">Save</button></a><br>
+        </form>
+        <br><br>
+         <footer><div class="footer">
+        <!-- <h1>Social Profiles</h1>
+        <h1>Follows</h1> -->
+        <div class="dec">
+        <center><h2>Here the review is being taken only to improve the performance of the My Self. This review will be published On my Oficial website  .
+ </h2><br><br>
+<h2>Please make sure the word use in review is properly and not use abouse word .</h1>
+<br><h1>Thank you so much </h1>
+</div><br><br><br>
+<h1>This Website is created by <a href="https://Ramgopal-prajapati.github.io/Ram/"> <h2>Ramgopal Prajapati</h2></a></h1>
+</center>
+</footer>
+
+        <script src="" async defer></script>
+    </body>
+</html>
